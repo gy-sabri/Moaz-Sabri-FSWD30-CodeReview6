@@ -45,6 +45,7 @@ function myCds() {
     CD = Cds.push(x);
 
     if (Title == "" || Author == "" || Image == "") {
+        document.getElementById("massage").style.color = "red";
         document.getElementById("massage").innerHTML = "Please complete the entries...";
         elementT.classList.add("sorry");
         elementA.classList.add("sorry");
@@ -109,6 +110,7 @@ function myDvds() {
     DVD = Dvds.push(x);
 
     if (Title == "" || Author == "" || Image == "") {
+        document.getElementById("massage").style.color = "red";
         document.getElementById("massage").innerHTML = "Please complete the entries...";
         elementT.classList.add("sorry");
         elementA.classList.add("sorry");
@@ -173,6 +175,7 @@ function myBooks() {
     BOOK = Books.push(x);
 
     if (Title == "" || Author == "" || Image == "") {
+        document.getElementById("massage").style.color = "red";
         document.getElementById("massage").innerHTML = "Please complete the entries...";
         elementT.classList.add("sorry");
         elementA.classList.add("sorry");
@@ -236,6 +239,7 @@ function myComics() {
 
     
     if (Title == "" || Author == "" || Image == "") {
+        document.getElementById("massage").style.color = "red";
         document.getElementById("massage").innerHTML = "Please complete the entries...";
         elementT.classList.add("sorry");
         elementA.classList.add("sorry");
