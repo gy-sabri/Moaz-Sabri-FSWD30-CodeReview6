@@ -106,7 +106,7 @@ function myDvds() {
     
     x = ('<div class="card float-left"><img class="card-img-top" src="'+ Image +'" alt="Card image cap"><div class="card-body"><h3 class="card-title">Title: '+ Title  +'</h3><h4 class="card-title">Author: '+ Author  +'</h4></div><ul class="list-group list-group-flush"><li class="list-group-item">Genre: '+ Genre +'</li><li class="list-group-item">Publisher: '+ Publisher +'</li><li class="list-group-item">Rating: '+ Rating +'</li></ul></div></div>');
     
-    DVD = Cds.push(x);
+    DVD = Dvds.push(x);
 
     if (Title == "" || Author == "" || Image == "") {
         document.getElementById("massage").innerHTML = "Please complete the entries...";
@@ -170,7 +170,7 @@ function myBooks() {
     
     x = ('<div class="card float-left"><img class="card-img-top" src="'+Image +'" alt="Card image cap"><div class="card-body"><h3 class="card-title">Title: '+ Title  +'</h3><h4 class="card-title">Author: '+ Author  +'</h4></div><ul class="list-group list-group-flush"><li class="list-group-item">Genre: '+ Genre +'</li><li class="list-group-item">Publisher: '+ Publisher +'</li><li class="list-group-item">Weight: '+ Weight +'</li></ul></div></div>');
     
-    BOOK = Cds.push(x);
+    BOOK = Books.push(x);
 
     if (Title == "" || Author == "" || Image == "") {
         document.getElementById("massage").innerHTML = "Please complete the entries...";
@@ -232,7 +232,7 @@ function myComics() {
     
     x = ('<div class="card float-left"><img class="card-img-top" src="'+ Image +'" alt="Card image cap"><div class="card-body"><h3 class="card-title">Title: '+ Title  +'</h3><h4 class="card-title">Author: '+ Author  +'</h4></div><ul class="list-group list-group-flush"><li class="list-group-item">Genre: '+ Genre +'</li><li class="list-group-item">Publisher: '+ Publisher +'</li><li class="list-group-item">Rating: '+ Rating +'</li></ul></div></div>');
     
-    COMICS = Cds.push(x);
+    COMICS = Comics.push(x);
 
     
     if (Title == "" || Author == "" || Image == "") {
