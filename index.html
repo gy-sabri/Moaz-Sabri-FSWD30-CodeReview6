@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+
+        <title>Moaz-Sabri-FSWD30-CodeReview 6</title>
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="http://www.codefactory.academy/sabri-moaz/">Moaz-Sabri-FSWD30-CodeReview 6</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Cds">CDs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Dvds">DVDs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Comics">Comics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Books">Book</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        or Section
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#Cds">CDs</a>
+                            <a class="dropdown-item" href="#Dvds">DVDs</a>
+                                <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#Comics">Comics</a>
+                            <a class="dropdown-item" href="#Books">Book</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div class="container">
+            <section>
+                
+                <div style="padding:20px">
+                    <button onclick="on()" class="btn btn-danger">Add CD or DVD or Book or Comics</button>
+                </div>
+
+                <!-- Start Section CDs -->
+                <h2 class="display-4">CDs</h2><hr>
+                <article id="Cds">
+                </article>
+                <div class="clear"></div>
+
+                <!-- Start Section DVDs -->
+                <h2 class="display-4">DVDs</h2><hr>
+                <article id="Dvds">
+                </article>
+                <div class="clear"></div>
+
+                <!-- Start Section Books -->
+                <h2 class="display-4">Books</h2><hr>
+                <article id="Books">
+                </article>
+                <div class="clear"></div>
+
+                <!-- Start Section Comics -->
+                <h2 class="display-4">Comics</h2><hr>
+                <article id="Comics">
+                </article>
+                <div class="clear"></div>
+            </section>
+            
+            
+
+            <div id="overlay">
+            <section class="form">
+                <button onclick="off()" class="btn btn-danger mb-2">Cluse</button>
+                <div class="form-row">
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom01">Title</label>
+                        <input type="text" class="form-control" id="Title" placeholder="Mark" required>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom02">Author</label>
+                        <input type="text" class="form-control" id="Author" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom02">genre</label>
+                        <input type="text" class="form-control" id="Genre" placeholder="“Rock”, “Pop” “SF”, “Crimi”, “Horror”, “Comedy”, “Drama”, “Documentary”, “Children”..." required>
+                    </div>
+                    
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom02">Publisher</label>
+                        <input type="text" class="form-control" id="Publisher" placeholder="" required>
+                    </div>
+                    <div class="col-md-8 mb-2">
+                        <label for="validationCustom03">Image</label>
+                        <input type="text" class="form-control" id="Image" placeholder="http://www.codefactory.wien/img/code.png" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom04">Rating</label>
+                        <input type="text" class="form-control" id="Rating" placeholder="Rating betwen One and Five Stars" required>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom05">Time</label>
+                        <input type="number" class="form-control" id="Time" placeholder="Time will be in Minutes" required>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <label for="validationCustom05">Weight</label>
+                        <input type="number" class="form-control" id="Weight" placeholder="" required>
+                    </div>
+                </div>
+                
+                <label>Add To.. </label>
+                <h2 id="massage" class="display-4 m-2" style="color: red"></h2>
+                <button class="btn btn-warning m-1" onclick="myCds()">CDs</button>
+                
+                <button class="btn btn-warning m-1" onclick="myDvds()">DVD</button>
+                
+                <button class="btn btn-warning m-1" onclick="myBooks()">Books</button>
+                
+                <button class="btn btn-warning m-1" onclick="myComics()">Comics</button>
+                
+                <button class="btn btn-warning m-1" onclick="myReset()">Reset</button>
+            </section>
+            </div>
+        </div>
+        
+        <footer class="bg-dark">
+            <a class="navbar-brand" href="http://www.codefactory.academy/sabri-moaz/">Moaz-Sabri-FSWD30-CodeReview 6</a>
+        </footer>
+        
+        
+
+        
+
+
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>
