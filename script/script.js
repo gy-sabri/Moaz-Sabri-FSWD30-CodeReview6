@@ -51,6 +51,7 @@ function myCds() {
         elementI.classList.add("sorry");
 
     } else {
+        document.getElementById("massage").style.color = "#8EEA90";
         document.getElementById("massage").innerHTML = "Successfully added";
         elementT.classList.remove("sorry");
         elementA.classList.remove("sorry");
@@ -114,6 +115,7 @@ function myDvds() {
         elementI.classList.add("sorry");
 
     } else {
+        document.getElementById("massage").style.color = "#8EEA90";
         document.getElementById("massage").innerHTML = "Successfully added";
         elementT.classList.remove("sorry");
         elementA.classList.remove("sorry");
@@ -177,6 +179,7 @@ function myBooks() {
         elementI.classList.add("sorry");
 
     } else {
+        document.getElementById("massage").style.color = "#8EEA90";
         document.getElementById("massage").innerHTML = "Successfully added";
         elementT.classList.remove("sorry");
         elementA.classList.remove("sorry");
@@ -239,6 +242,7 @@ function myComics() {
         elementI.classList.add("sorry");
 
     } else {
+        document.getElementById("massage").style.color = "#8EEA90";
         document.getElementById("massage").innerHTML = "Successfully added";
         elementT.classList.remove("sorry");
         elementA.classList.remove("sorry");
