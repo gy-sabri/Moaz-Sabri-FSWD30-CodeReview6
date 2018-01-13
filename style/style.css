@@ -26,7 +26,8 @@ section {
 .card {
     min-width: 250px;
     max-width: 250px;
-    margin: 10px; 
+    margin: 10px;
+    height: 520px;
     transition: all .2s ease-in-out
 }.card:hover{
     transform:scale(1.1,1.1);
